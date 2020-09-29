@@ -19,9 +19,14 @@ exports.getTemplate = function() {
 			"rename": "{{fileName}}.websocket"
 		},
 		{
-			"location": "/template-websocket/handler.js.template", 
+			"location": "/template-websocket/service-handler.js.template", 
 			"action": "generate",
-			"rename": "{{fileName}}-handler.js"
+			"rename": "{{fileName}}-service-handler.js"
+		},
+		{
+			"location": "/template-websocket/client-handler.js.template", 
+			"action": "generate",
+			"rename": "{{fileName}}-client-handler.js"
 		},
 		{
 			"location": "/template-websocket/client.js.template", 
